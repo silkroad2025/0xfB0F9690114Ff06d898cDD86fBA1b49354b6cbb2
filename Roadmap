@@ -1,0 +1,342 @@
+SilkRoadCoin (SRC) – Official
+Whitepaper & Roadmap
+Version: 1.0 Network: BEP‑20 (Binance Smart Chain) Contract Address:
+0xfB0F9690114fF06d898cDD86fBA1b49354b6cbb2 Total Supply: 250,000,000
+SRC (18 Decimals) Official Website: https://src.achaemion.com/ Issuer:
+Achaemion Ecosystem – Dubai | Mauritius
+1. Introduction
+SilkRoadCoin (SRC) is a decentralized digital asset meticulously engineered to
+embody the dynamics of modern global trade routes, specifically those echoing
+the historical Silk Road in their interconnectedness and economic significance.
+SRC is not merely a cryptocurrency; it is the native settlement layer designed to
+operate seamlessly within the broader Achaemion Web3 framework. This
+framework focuses on bridging traditional economic corridors with decentralized
+finance (DeFi) principles, ensuring transparency, security, and efficiency in crossborder value transfer and commerce.
+SRC is built on the robust and cost-effective Binance Smart Chain (BSC) using
+the widely accepted BEP-20 standard, ensuring maximum compatibility with
+existing DeFi infrastructure, wallets, and decentralized exchanges (DEXs). The
+asset's core utility is tied directly to transactional enablement across
+Achaemion’s suite of platforms, including marketplace settlements, residency
+payment processing, and decentralized liquidity provision. Furthermore, SRC
+integrates deflationary mechanics designed to foster long-term value retention
+for its holders.
+The concept underpinning SRC is to create a borderless, trust-minimized medium
+of exchange that facilitates complex supply chain financing, virtual asset trading,
+and B2B transactions that traditionally suffer from high latency and intermediary
+costs in legacy financial systems.
+2. Vision & Mission
+Vision
+To establish SilkRoadCoin (SRC) as the definitive, transparent, and decentralized
+trade token that serves as the primary medium of settlement for virtual
+commerce, digital services, and tokenized assets flowing across established and
+emerging global economic corridors, facilitated by Achaemion technologies.
+Mission
+Our mission is multifaceted: 1. Utility Delivery: To embed SRC deeply within the
+Achaemion Ecosystem, ensuring it possesses intrinsic utility as the preferred
+medium for staking, cross-platform payments, and governance participation. 2.
+Stability and Liquidity: To maintain a healthy, liquid market environment through
+automated liquidity provisioning mechanisms funded by transactional taxes, thus
+supporting predictable settlement values. 3. Cross-Border Facilitation: To provide
+a streamlined, low-fee, and rapid mechanism for transferring value between
+jurisdictions, overcoming the friction points inherent in conventional
+correspondent banking networks. 4. Sustainability: To implement verifiable, onchain deflationary measures that align holder incentives with the long-term
+success and reduced circulating supply of the token.
+3. Token Overview
+The technical specifications of SilkRoadCoin are critical to its functionality and
+security on the Binance Smart Chain.
+Attribute Details
+Name SilkRoadCoin
+Symbol SRC
+Standard BEP‑20
+Decimals 18
+Total Supply 250,000,000 SRC
+Attribute Details
+Contract Address 0xfB0F9690114fF06d898cDD86fBA1b49354b6cbb2
+Owner (Admin Wallet) 0xb73997C19722aCe8FA3b4178301D1828Bc89E9E9
+Tax Wallet
+(Marketing/Stability) 0xF9A8Bb84ef445b9499bB0a4E088A321F54B621F9
+Buy Tax 5%
+Sell Tax 10%
+First Burn Event 10% of Total Supply (Executed Post-Launch)
+Second Burn Event 5% of Total Supply (Scheduled Post-Phase II)
+License
+MIT Licensed, contract verified on BscScan for public
+scrutiny.
+The contract implements standard BEP-20 functions, augmented with custom
+logic for tax collection and automated burning mechanisms. The Owner address
+retains administrative control necessary for initial deployment, critical upgrades
+(if implemented via a proxy pattern, though minimized), and the execution of
+scheduled burn events.
+4. Tokenomics
+The tokenomics model for SRC is designed around three core pillars: controlled
+distribution, utilization of transactional taxes for ecosystem health, and inherent
+deflation to reward long-term holding.
+4.1. Initial Distribution Schedule
+The initial fixed supply of 250,000,000 SRC is allocated strategically to bootstrap
+development, marketing, and community growth:
+80% Treasury/Owner Allocation: This substantial reserve provides the
+Achaemion Ecosystem the necessary capital flexibility for long-term
+development, liquidity bootstrapping, strategic acquisitions, and operational
+runway. This allocation is locked or vested according to internal
+compliance schedules, minimizing immediate sell pressure.
+•
+10% Ecosystem Development & Rewards: Reserved for staking rewards,
+liquidity provider incentives, and development grants necessary to build out
+the features within the Achaemion Network (SmartVerse, Zarvion Protocol).
+5% Marketing & Exchange Listing: Dedicated to building global awareness,
+community engagement campaigns, and securing listings on major
+centralized exchanges (CEXs) to enhance accessibility and liquidity.
+5% Strategic Partnerships: Allocated for vested incentives for key
+integration partners, major institutional adoption efforts, and advisory
+board compensation.
+4.2. Transactional Taxation Structure
+All non-internal transfers (buys and sells on DEXs utilizing the tax mechanism)
+incur a fee, which is immediately allocated upon transaction completion.
+Buy Tax (5%): The 5% collected on every purchase is directed entirely towards
+Liquidity Growth.
+This mechanism ensures that as trading volume increases, the base liquidity
+pool (e.g., SRC/USDT) deepens, reducing slippage and enhancing market stability
+for all participants.
+Sell Tax (10%): The 10% fee collected on every sale is split between ecosystem
+stabilization and marketing efforts, housed in the designated Tax Wallet:
+Note: The precise split of the 10% sell tax is subject to future minor adjustments
+based on DAO governance if active, but the initial design allocates a significant
+portion to the Tax Wallet.
+•
+•
+•
+Buy Tax=5%Buy Tax →Automated LP Funding = 5% → Automated LP Funding \text{Buy Tax} = 5\% \rightarrow \textSell Tax Sell Tax==1010%%→→{7%{Tax Wallet (Marketing/Stability) 3%Automated Burn Mecha7% Tax Wallet (Marketing/Stability) 3% Automated Burn
+4.3. Deflationary Events
+To counteract inflation and reward early adopters, SRC incorporates scheduled,
+irreversible token destruction events executed directly via the smart contract:
+Stage 1 Burn: An immediate reduction of 10% of the Initial Total Supply
+upon verifiable achievement of predefined community and ecosystem
+milestones (e.g., successful DEX launch and initial liquidity lock
+verification).
+Stage 2 Burn: A further reduction of 5% of the Initial Total Supply,
+scheduled for execution upon the successful integration of SRC into the
+XERION Global Residency payment system (Phase III completion).
+These burns are hardcoded into the contract, ensuring transparency and
+permanence of the supply reduction. The maximum total deflation from these
+events alone is 15% of the initial supply, leading to a significantly lower
+circulating supply over time, assuming sustained utility.
+5. Functional Mechanism
+The SRC smart contract on BEP-20 is engineered for high performance, security,
+and specific utility implementation:
+Dual-Phase Taxation: The contract logic distinguishes between buy and
+sell transactions to route fees accurately. This separation is crucial for
+maintaining a predictable liquidity pool (funded by the Buy Tax) while
+funding operational growth (via the Sell Tax).
+Deflation via Immutable Burn Functions: The contract includes privileged
+functions callable only by the Owner/DAO to trigger the scheduled burns.
+Once executed, the tokens are sent to an irreversible burn address
+( 0x000...000 ), permanently removing them from circulation.
+BEP‑20 Compliance: Full adherence to the standard ensures compatibility
+with MetaMask, Trust Wallet, Ledger, and virtually all decentralized
+applications (dApps) and DEXs operating on BSC. Functions like
+approve , transferFrom , and balanceOf operate as expected.
+Gas Efficiency: The contract codebase is optimized to minimize
+computational complexity, resulting in lower gas costs for users executing
+1.
+2.
+•
+•
+•
+•
+standard transfers, a key requirement for high-frequency trading and microtransactions within Achaemion platforms.
+Future DAO Governance Integration: While initially centralized for
+deployment and stability assurance, the structure allows for the migration
+of ownership and critical parameter controls (like tax adjustments, postburn execution) to a Decentralized Autonomous Organization (DAO)
+governed by SRC holders, ensuring decentralized control over the protocol's
+future.
+6. Ecosystem Integration
+SilkRoadCoin derives its primary value proposition from its mandatory role within
+the evolving Achaemion Network. SRC is the foundational economic pillar
+connecting disparate services under the Achaemion umbrella.
+6.1. Core Utility Vectors
+A. Transaction Medium for SmartVerse Marketplace: SmartVerse is Achaemion’s
+forthcoming decentralized marketplace for digital goods, real-world assets
+(tokenized deeds, intellectual property shares), and virtual real estate. SRC will be
+the primary base currency for all peer-to-peer and business-to-consumer
+transactions, offering instant, low-cost settlement.
+B. Settlement Token for XERION Global Residency Payments: XERION focuses on
+facilitating global mobility and residency programs. SRC will serve as the
+preferred, vetted token for paying administrative fees, filing costs, and
+compliance charges associated with these complex international applications,
+streamlining cross-jurisdictional financial interactions.
+C. Cross-Asset Liquidity Token within Zarvion Protocol: Zarvion Protocol is the
+DeFi arm, focusing on cross-chain asset bridging and liquidity provision. SRC will
+function as a highly desirable collateral asset or a core liquidity pairing token,
+providing stability and yield opportunities within Zarvion’s yield farming
+strategies.
+•
+6.2. Active Liquidity Pools
+To ensure immediate tradability and market depth post-launch, SRC is initially
+provisioned across multiple critical liquidity pairs on supported DEXs (e.g.,
+PancakeSwap, or specialized Zarvion DEX instances):
+SRC/USDT (Stablecoin Pairing)
+SRC/WBNB (Base Pairing)
+SRC/MEGALAND (Internal Ecosystem Pairing)
+SRC/FOX (Strategic Partner Pairing)
+SRC/PIGGY (Community/Volume Pairing)
+The Buy Tax feeds directly into these pairs, ensuring that trading activity directly
+contributes to the depth and stability of the market.
+7. Governance & Compliance
+The long-term viability of SRC depends on its transition to a robust, decentralized
+governance structure that aligns with evolving international regulatory
+frameworks.
+Migration to DAO Governance: The roadmap includes the transition to a fully
+functional DAO governed by SRC holders. Initial governance mechanisms will be
+deployed on the Achaemion Registry Network (ARN).
+Achaemion Registry Network (ARN): The ARN is Achaemion’s dedicated layer
+designed to integrate decentralized protocols with emerging global compliance
+standards, particularly those analogous to the European Union's MiCA (Markets
+in Crypto-Assets) regulation. This proactive stance ensures that the ecosystem
+can interact legally and securely with regulated entities worldwide.
+Holder Voting: Once activated, SRC holders will propose and vote on critical
+protocol changes, including: * Adjustments to the Buy/Sell tax structure (within
+predefined maximums). * Allocation of Tax Wallet funds for major marketing or
+development initiatives. * Upgrades to the smart contract logic (via proxy
+mechanisms). * Integration/de-listing of new liquidity pairs.
+•
+•
+•
+•
+•
+8. Roadmap
+The development and adoption of SilkRoadCoin are structured across distinct,
+measurable phases to ensure steady progress and community engagement.
+Phase Timeline Objectives Key Deliverables
+Phase I
+– Q2
+2025
+Token Launch &
+Verification
+Secure smart
+contract
+deployment and
+initial market
+access.
+Contract deployed (0xfB0...), full
+BscScan verification, DEX listing
+(PancakeSwap), initial liquidity
+locked.
+Phase
+II – Q3
+2025
+Supply
+Stabilization &
+Reporting
+Implement initial
+deflation and
+provide
+transparency on
+usage.
+Execution of Stage 1 Burn (10%
+Supply). Deployment of the Public
+Metrics Dashboard tracking Tax
+Wallet and Burn activity. Tax
+stabilization parameters finalized.
+Phase
+III – Q4
+2025
+Ecosystem
+Integration
+(Utility
+Activation)
+Hard-linking SRC
+utility to core
+Achaemion
+platforms.
+Full operational integration of SRC
+as the settlement token within the
+SmartVerse marketplace and
+successful onboarding for XERION
+residency payment pilot programs.
+Phase
+IV – Q1
+2026
+Cross-Chain
+Expansion
+Enhance
+accessibility and
+utility beyond the
+BSC mainnet.
+Deployment of secure, audited
+bridges allowing bidirectional
+transfer of SRC between BSC and
+major layer-1/layer-2 networks (e.g.,
+Arbitrum/Solana ecosystems).
+Phase
+V – Q2
+2026
+Decentralized
+Governance
+Activation
+Transition core
+decision-making
+power to the
+community.
+DAO governance activation via the
+ARN. Migration of admin keys/
+functions (excluding essential
+emergency backups) to the
+governance contract. Execution of
+Stage 2 Burn (5% Supply) upon DAO
+vote confirmation.
+Phase
+VI –
+Enterprise &
+Adoption
+Maturity
+Focus on highvolume
+Securing significant enterprise
+adoption agreements leveraging
+Achaemion partner trade programs.
+Phase Timeline Objectives Key Deliverables
+Q3–Q4
+2026
+transactional
+adoption.
+Establishment of official fiat on/off
+ramps integrated with SRC usage
+corridors.
+9. Security & Auditing
+Security is paramount for a foundational asset like SRC. Our approach is layered:
+Fixed Supply Minus Burns: The total potential supply is mathematically
+capped (250M minus committed burns), ensuring no unexpected inflation
+mechanisms are present outside of the contract code.
+Transparent Ownership and Tax Flows: All critical contract addresses
+(Owner, Tax Wallet) are public on BscScan. The logic governing tax
+collection is auditable within the smart contract source code.
+Pending Third-Party Audits: Prior to the activation of major utility phases
+(Phases III and V), the SRC contract will undergo formal audits by reputable
+blockchain security firms, including but not limited to GoPlus Security and
+TokenSniffer, to verify the integrity of the taxation, transfer, and burn
+functions. Audit reports will be made public.
+MIT License Compliance: Releasing the core logic under the permissive
+MIT license encourages community review and ensures transparency
+regarding the open-source nature of the deployment.
+10. Legal Disclaimer
+READ CAREFULLY: Investment Risk Notice
+SilkRoadCoin (SRC) is a utility token designed to facilitate transactions and
+governance within the Achaemion Ecosystem. SRC tokens do not, under any
+circumstances, represent equity, shares, partnership interests, or debt obligations
+in Achaemion Holding FZ-LLC, Achaemion Ecosystem, or any associated entities.
+The value of SRC is entirely market-determined, influenced by supply, demand,
+adoption rates, and the success of the Achaemion Network. There are no
+guaranteed returns, yields, or fixed prices associated with holding SRC. Engaging
+•
+•
+•
+•
+with SRC involves inherent risks associated with digital assets, including volatility
+and potential loss of principal. Users should conduct their own thorough due
+diligence (DYOR) and consult independent legal and financial advisors before
+acquiring or using SRC.
+11. Contact
+For inquiries related to technical specifications, partnerships, or support:
+Official Website: https://src.achaemion.com General Support Email:
+support@achaemion.shop Business & Information Email: info@achaemion.com
+Issuer Registrant: Achaemion Holding FZ-LLC (Jurisdictions: Dubai, UAE | Port
+Louis, Mauritius)
